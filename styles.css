@@ -225,8 +225,11 @@ button{
     border: none;
 }
 
+
+/* sytaling for Contact */
+
 .contactSection {
-  background-color: #f2fbf5; /* light greenish background */
+  background-color: #f8fdfa; /* light greenish background */
   padding: 60px 20px;
   border-top: 1px solid #ddd;
 }
