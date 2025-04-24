@@ -1,136 +1,284 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
-header{
-    background-color: #1a3129;
-    color: #fff;
-    padding-block: 1rem;
+header {
+  background-color: #1a3129;
+  color: #fff;
+  padding-block: 1rem;
 }
 
-.genLayout{
-    max-width: 1000px;
-    margin: auto;
+.hamburger,
+#toggle {
+  display: none;
 }
-.headerBadge{
-    border: 1px solid #294f41;
-    border-radius: 4px;
-    background-color: #234338;
+
+.genLayout {
+  max-width: 1000px;
+  margin: auto;
+}
+.headerBadge {
+  border: 1px solid #294f41;
+  border-radius: 4px;
+  background-color: #234338;
+  text-align: center;
+  padding-block: 0.3rem;
+}
+
+.headerBadge > p {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.fa-globe {
+  color: #cbea7b;
+}
+
+nav {
+  margin-top: 1rem;
+  border-top: 1px solid#1d382e;
+}
+
+.innerNav {
+  padding-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 22px;
+}
+.logo > i {
+  color: #cbea7b;
+}
+
+.navigationItems {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigationItems > a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navigationItems > a:first-child {
+  color: #cbea7b;
+}
+.navigationItems > a:last-child {
+  background-color: #cbea7b;
+  color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+}
+
+
+/* styling for team by Amarachi */
+
+.badge{
+    background-color:#f6fbe9;
+    margin-block: 2.7rem;
+    border-radius: 5px;
     text-align: center;
-    padding-block: .3rem;
+    padding-top: 2rem;
 }
 
-.headerBadge > p{
-    text-transform: capitalize;
-    font-size: 13px;
-}
-
-.fa-globe{
-    color: #cbea7b;
-}
-
-nav{
-    margin-top: 1rem;
-    border-top: 1px solid#1d382e;
-}
-
-.innerNav{
-    padding-top: .7rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    text-transform: capitalize;
-    color: #fff;
-} 
-.logo > i{
-    color: #cbea7b;
-}
-
-.navigationItems{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.navigationItems > a{
-    color: #fff;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.navigationItems > a:first-child{
-    color: #cbea7b;
-}
-.navigationItems > a:last-child{
+.badge >span{
     background-color: #cbea7b;
-    color: #000;
-    padding: .4rem .8rem;
-    border-radius: 3px;
-}
-
-/* footer styling */
-footer{
-    background-color: #1a3129;
-    padding-block: 2rem;
-}
-
-.footerMenuItems{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footerMenuList{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footerMenuList > a{
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-.pageTop{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-.pageTop > h6{
-    font-weight: 400;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 13px;
-}
-
-.pageTop > a{
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #294f41;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    color: #1a3129;
+    width: 60px;
+    margin: 1.5rem auto;
+    height: 50px;
+    font-size: 30px;
+    opacity: .7;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: #fff;
 }
 
-.pageTop > a > i{
+.badge >h1{
+    margin-block: 1rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+.badge >p{
+    padding: 0 2rem;
     font-size: 12px;
+    margin-block: 1rem;
+    /* opacity: .7; */
 }
 
+.badgeInfo{
+    display: flex;
+    margin-block: 3rem;
+    padding: 20px 5px;
+    justify-content: space-between;
+    background-color: #1d382e;
+    border-radius: 7px;
+    
+}
+
+.badgeInfo >h6{
+    /* border: 1px solid #fff ; */
+    padding: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+
+.badgeInfo > h6:first-child{
+    border-radius: 3px;
+    background-color: #234338;
+    margin-left: 3rem;
+}
+
+.badgeInfo >h6:last-child{
+    margin-right: 3rem;
+}
+
+.teamMate{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.teamCard{
+    background-color: #c7e678;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px; 
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.teamInfo{
+    background-color:#f6fbe9 ;
+    width: 150px;
+    border-radius: 7px;
+    padding:1rem .7rem;
+    margin-bottom: 10rem;
+    position: absolute;
+}
+
+.teamInfo >h6{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.teamInfo >p{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.teamGoal{
+    background-color: #f6fbe9;
+    border-radius: 5px;
+    margin-block: 6rem;
+    padding: 2rem ;
+}
+
+.teamGoal >h3{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.goalInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+.goalInfo >p{
+    font-size: 12px;
+    width: 700px;
+}
+
+button{
+    padding:0 .7rem;
+    border-radius: 5px;
+    background-color: #cbea7b;
+    margin-left: 1rem;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+/* footer styling */
+footer {
+  background-color: #1a3129;
+  padding-block: 2rem;
+}
+
+.footerMenuItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerMenuList {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerMenuList > a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.pageTop {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.pageTop > h6 {
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.pageTop > a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #294f41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.pageTop > a > i {
+  font-size: 12px;
+}
 
 /* process */
 .topBody{
@@ -223,4 +371,121 @@ font-weight: 500;
 .content1{
     border: 2px solid;
     
+=======
+.footerNote{
+  border-radius: 3px;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: #234338;
+  border: 1px solid #294f41;
+  padding: .5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.footAddress{
+  display: flex;
+  gap: 1rem;
+}
+
+.footAddress > h5{
+  border-radius: 3px;
+  padding: .3rem .8rem;
+  border: 1px solid #294f41;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.footAddress > h5 > i{
+  color: #cbea7b;
+  margin-right: .3rem;
+}
+
+.footerNote > p {
+  font-weight: 200;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+
+/* Responsive code for Header, Nav and Footer */
+@media (min-width: 260px) and (max-width: 460px) {
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    color: #cbea7b;
+  }
+
+  .innerNav {
+    width: calc(100% - 40px);
+  }
+
+  .navRight {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    padding: 1.8rem;
+    top: 8rem;
+    right: 3px;
+    z-index: 1;
+    background-color: #234338;
+    opacity: 0.97;
+    border-bottom: 4px solid #fff;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .navigationItems {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+  }
+
+  .navigationItems > a {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.6rem;
+    text-align: left;
+    border-bottom: 4px solid #1a3129;
+  }
+
+  .navigationItems > a:last-child {
+    border: none;
+  }
+
+  #toggle:checked + .navRight {
+    display: block;
+    transform: none;
+  }
+
+  .footerMenuItems{
+    /* align-items: start; */
+    width: 330px;
+    margin: auto;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .footerMenuList{
+    flex-direction: column;
+    width: 100%;
+    /* align-items: start; */
+  }
+  }
+
+  .footerNote{
+    width: 350px;
+    margin: 1.7rem auto;
+    flex-direction: column;
+    gap: 1rem;
+    /* overflow-x: scroll; */
+  }
+
+  .footAddress{
+    flex-direction: column;
+  }
+
+
