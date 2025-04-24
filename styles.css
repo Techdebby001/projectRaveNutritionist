@@ -370,8 +370,8 @@ font-weight: 500;
 
 .content1{
     border: 2px solid;
-    
-=======
+}
+
 .footerNote{
   border-radius: 3px;
   margin-top: 2rem;
@@ -474,7 +474,6 @@ font-weight: 500;
     width: 100%;
     /* align-items: start; */
   }
-  }
 
   .footerNote{
     width: 350px;
@@ -487,5 +486,10 @@ font-weight: 500;
   .footAddress{
     flex-direction: column;
   }
+
+  }
+
+
+  
 
 
