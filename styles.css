@@ -280,7 +280,98 @@ footer {
   font-size: 12px;
 }
 
+/* process */
+.topBody{
+    border: 2px solid rgb(240 249 216);
+    border-radius: 3px;
+    max-width: 1000px;
+    margin: auto;
+    margin-block: 40px;
+    background-color: rgb(246 251 233);
+}
 
+.topBody > span{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.topBody > span > i{
+    /* border: 2px solid black; */
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: rgb(26 49 41);
+    background-color: rgb(206 232 141);
+
+}
+
+.topBody > h2{
+/* border: 2px solid black; */
+display: flex;
+justify-content: center;
+font-weight: 500;
+}
+
+.topBody > p{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.topBody2{
+    /* border: 2px solid; */
+    max-width: 1000px;
+    margin: auto;
+    margin-block: 40px;
+}
+
+.topBody2 > h2{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.topBody2 > p{
+    /* border: 2px solid; */
+    text-align: center;
+    margin: auto;
+    margin-block: 10px;
+    width: 700px;
+    font-size: 12.6px;
+}
+
+.steps{
+    border: 2px solid;
+   display: flex;
+   
+}
+
+.step1{
+    border: 2px solid;
+    
+}
+
+.number{
+    border: 2px solid;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.content1{
+    border: 2px solid;
+    
+=======
 .footerNote{
   border-radius: 3px;
   margin-top: 2rem;
@@ -383,6 +474,7 @@ footer {
     width: 100%;
     /* align-items: start; */
   }
+  }
 
   .footerNote{
     width: 350px;
@@ -396,4 +488,4 @@ footer {
     flex-direction: column;
   }
 
-}
+
