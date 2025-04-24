@@ -178,7 +178,7 @@ img{
     width: 150px;
     border-radius: 7px;
     padding:1rem .7rem;
-    margin-bottom: 10rem;
+    bottom: -2rem;
     position: absolute;
 }
 
@@ -212,7 +212,7 @@ img{
 
 .goalInfo >p{
     font-size: 12px;
-    width: 700px;
+    width: 750px;
 }
 
 button{
