@@ -225,6 +225,98 @@ button{
     border: none;
 }
 
+.contactSection {
+  background-color: #f2fbf5; /* light greenish background */
+  padding: 60px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.contactIntro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contactIntro h2 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.contactIntro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contactForm form input,
+.contactForm form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.contactForm form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contactForm form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactForm form button:hover {
+  background-color: #388e3c;
+}
+
+.socialIcons {
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #4caf50;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #2e7d32;
+}
+
+.contactMap {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+}
+
+.contactMap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
 
 
 /* footer styling */
