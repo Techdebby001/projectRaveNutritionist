@@ -226,6 +226,63 @@ button{
 }
 
 
+/* resposive syling for Team Page */
+
+@media (min-width: 360px) and (max-width:500px) {
+ 
+  .badge{
+    width: calc(100%-40px);
+  }
+
+  .badge >p{
+    width: 350px;
+    margin: 1rem auto;
+    font-size: 14px;
+  }
+
+  .badgeInfo{
+    flex-direction: column;
+  }
+
+  .badgeInfo >h6{
+    font-size: 14px;
+  }
+
+  .teamMate{
+    flex-direction: column;
+  }
+
+  .teamCard{
+    margin-block: 1rem;
+  }
+  .teamInfo{
+    width: 150px;
+  }
+
+  .teamInfo >h6{
+    font-size: 16px;
+  }
+
+  .teamInfo >p{
+    font-size: 14px;
+  }
+
+  .teamGoal{
+    width: 300px;
+  }
+
+  .teamGoal >hi{
+    font-size: 14px;
+  }
+
+  .goalInfo >p{
+    font-size: 14px;
+  }
+
+
+}
+
+
 /* sytaling for Contact */
 
 .contactSection {
