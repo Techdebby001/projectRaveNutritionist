@@ -226,7 +226,7 @@ button{
 }
 
 
-/* sytaling for Contact */
+/* styling for Contact */
 * {
   margin: 0;
   padding: 0;
@@ -242,7 +242,7 @@ body {
 
 .contact-header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 25px 10px;
 }
 
 .contact-header .logo img {
@@ -251,14 +251,15 @@ body {
 }
 
 .contact-header h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-header p {
   max-width: 700px;
   margin: 0 auto;
   color: #555;
+  font-size: 11px;
 }
 
 .contact-info {
